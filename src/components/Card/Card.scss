@@ -1,0 +1,60 @@
+@use "../../assets/styles/_variables" as *;
+
+.cardlist {
+
+  &__card {
+    width: 275px;
+    height: 400px;
+    background-color: $color-card;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1.5em;
+    margin: 2rem;
+    justify-content: center;
+    box-shadow: 3px 3px #1E1E1E;
+
+    &-image, &-header, &-info, &-subheader {
+      padding: 0.3rem 0;
+    }
+
+    &-header, &-info, &-subheader {
+      color: $color-text;
+    }
+
+    &-image {
+      height: 200px;
+      width: auto;
+    }
+
+    &-header {
+      font-family: $font-header;
+      font-size: 1.5em;
+      color: $color-tertiary;
+    }
+
+    &-info {
+      display: grid;
+      grid-template-columns: repeat(3, 50px);
+      width: 100%;
+      justify-content: center;
+      border-top: 1px solid $color-text;
+      border-bottom: 1px solid $color-text;
+
+      > p {
+        font-family: $font-text;
+        font-size: 0.75em;
+      }
+
+      > .heading {
+        font-weight: bold;
+      }
+    }
+
+    &-subheader {
+      font-family: $font-text;
+      font-weight: normal;
+    }
+  }
+}
