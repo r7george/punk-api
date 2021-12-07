@@ -1,17 +1,23 @@
 import './App.scss';
 
-import CardList from './components/CardList/CardList';
-import beers from "./assets/data/beers";
+import Main from './containers/Main/Main';
+
+import React, {useState, useEffect} from 'react';
 
 const App = () => {
-  const trialBeer = beers[0];
-  console.log(trialBeer);
+  const [beerArr, setBeerArr] = useState([]);
+
+  useEffect(() => {
+    fetch(`https://api.punkapi.com/v2/beers`).then((response) => {
+      return response.json();
+    }).then((beerObject) => {
+      setBeerArr(beerObject);
+    })
+  }, [])
+
   return (
     <div className="App">
-      <div>
-        <CardList beerArray={beers} />
-      </div>
-      
+        <Main beerArr={beerArr} />
     </div>
   );
 }
