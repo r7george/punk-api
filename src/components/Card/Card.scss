@@ -1,60 +1,100 @@
 @use "../../assets/styles/_variables" as *;
 
-.cardlist {
+// customising scrollbar
+::-webkit-scrollbar {
+  width: 5px;
 
-  &__card {
-    width: 275px;
-    height: 400px;
-    background-color: $color-card;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 1.5em;
-    margin: 2rem;
+  &-track {
+    background: transparent;
+  }
+
+  &-thumb {
+    background: $color-tertiary;
+
+    &:hover {
+      background: $color-text;
+    }
+  }
+
+}
+
+.card {
+  width: 200px;
+  height: 400px;
+  background-color: $color-card;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1.5em;
+  margin: 2rem;
+  justify-content: center;
+  box-shadow: 3px 3px #1E1E1E;
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__image, &__header, &__info, &__tagline {
+    padding: 0.3rem 0;
+  }
+
+  &__header, &__info, &__tagline {
+    color: $color-text;
+  }
+
+  &__image {
+    height: 200px;
+    width: auto;
+  }
+
+  &__header {
+    font-family: $font-header;
+    font-size: 1.25em;
+    color: $color-tertiary;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    width: 100%;
     justify-content: center;
-    box-shadow: 3px 3px #1E1E1E;
+    border-top: 1px solid $color-text;
+    border-bottom: 1px solid $color-text;
+  }
 
-    &-image, &-header, &-info, &-subheader {
-      padding: 0.3rem 0;
-    }
+  &__alc-heading {
+    font-weight: bold;
+  }
 
-    &-header, &-info, &-subheader {
-      color: $color-text;
-    }
+  &__alc-info {
+    font-family: $font-text;
+      font-size: 0.75em;
+  }
 
-    &-image {
-      height: 200px;
-      width: auto;
-    }
+  &__tagline {
+    font-family: $font-text;
+    font-weight: normal;
+  }
 
-    &-header {
-      font-family: $font-header;
-      font-size: 1.5em;
-      color: $color-tertiary;
-    }
+  &__back {
+    color: $color-text;
+    text-align: left;
+    overflow-y: auto;
+  }
 
-    &-info {
-      display: grid;
-      grid-template-columns: repeat(3, 50px);
-      width: 100%;
-      justify-content: center;
-      border-top: 1px solid $color-text;
-      border-bottom: 1px solid $color-text;
+  &__description-text, &__foodPair-text {
+    margin-bottom: 1.5rem;
+  }
 
-      > p {
-        font-family: $font-text;
-        font-size: 0.75em;
-      }
+  &__foodPair-text {
+    margin-left: 20px;
+  }
+}
 
-      > .heading {
-        font-weight: bold;
-      }
-    }
+@media only screen and (min-width: 768px) {
 
-    &-subheader {
-      font-family: $font-text;
-      font-weight: normal;
-    }
+  .card {
+    margin: 1.5rem;
   }
 }
