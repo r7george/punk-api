@@ -27,11 +27,15 @@ const App = () => {
     return beerNameLC.includes(searchTerm);
   });
 
+  const handleChange = (event) => {
+    console.log(event);
+  }
+
   return (
     <div className="App">
       <h1>Punk API</h1>
       <div className="page-content">
-        <Navbar searchTerm={searchTerm} handleInput={handleInput} />
+        <Navbar searchTerm={searchTerm} handleInput={handleInput} handleChange={handleChange} />
         <Main beerArr={filteredBeerArr} />
       </div>
     </div>
