@@ -1,0 +1,19 @@
+@use "../../assets/styles/_variables" as *;
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__input {
+    font-size: 1.1em;
+    background-color: transparent;
+    color: $color-text;
+    border: 1px solid $color-text;
+    border-radius: 1.5em;
+    text-align: center;
+    margin-top: 0.75rem;
+    padding: 0.2rem;
+  }
+}
+

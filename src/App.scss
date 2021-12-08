@@ -13,3 +13,16 @@
 body {
   background-color: $color-background;
 }
+
+h1 {
+  color: $color-tertiary;
+  font-family: $font-header;
+  font-size: 3.5em;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .page-content {
+    display: flex;
+  }
+}

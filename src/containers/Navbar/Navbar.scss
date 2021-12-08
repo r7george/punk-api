@@ -1,0 +1,27 @@
+@use "../../assets/styles/_variables" as *;
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-card;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  padding: 1rem;
+  border-radius: 1.5em;
+  // box-shadow: 3px 3px #1E1E1E;
+
+  &__heading {
+    font-family: $font-header;
+    color: $color-text;
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .navbar{
+    width: 40%;
+    height: fit-content;
+    margin: 1.5rem 0 0 1.5rem;
+  }
+}
