@@ -5,7 +5,7 @@ const FilterItem = ({name, onChange, label, id}) => {
   return (
     <form className="filter-item">
       <label htmlFor={name} className="filter-item__label">{label}</label>
-      <input type="checkbox" name={name} onChange={onChange} id={id} />
+      <input type="checkbox" className="filter-item__checkbox" name={name} onChange={onChange} id={id} />
     </form>
   )
 }

@@ -10,6 +10,7 @@ const Navbar = ({searchTerm, handleInput, handleChange}) => {
       <h2 className="navbar__heading">Search & Filter</h2>
       <SearchBox placeholder="Search by Name" searchTerm={searchTerm} handleInput={handleInput}/>
       <FiltersList onChange={handleChange}  />
+      <p className="navbar__text">see more info by clicking the card</p>
     </div>
   )
 }

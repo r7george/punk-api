@@ -14,12 +14,24 @@ body {
   background-color: $color-background;
 }
 
-h1 {
-  color: $color-brew;
-  font-family: $font-header;
-  font-size: 3.5em;
+.header {
+  display: flex;
   background-color: $color-card;
-  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  
+  &__heading {
+    color: $color-brew;
+    font-family: $font-header;
+    font-size: 3.5em;
+    padding: 0.5rem;
+  }
+
+  &__img {
+    height: 75px;
+    width: auto;
+    margin: 0 0.5rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {

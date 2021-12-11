@@ -10,7 +10,7 @@ const CardList = ({beerArray}) => {
 
   return (
     <div className="cardlist">
-      {cardJSX}
+      {beerArray.length > 0 ? cardJSX : <h2 className="cardlist__heading">No beers available</h2>}
     </div>
   )
 }
