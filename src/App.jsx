@@ -8,6 +8,9 @@ import Navbar from './containers/Navbar/Navbar';
 const App = () => {
   const [beerArr, setBeerArr] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [isHighAbv, setIsHighAbv] = useState(false);
+  const [isClassic, setIsClassic] = useState(false);
+  const [isHighAcidity, setIsHighAcidity] = useState(false);
 
   useEffect(() => {
     fetch(`https://api.punkapi.com/v2/beers`).then((response) => {
@@ -28,7 +31,7 @@ const App = () => {
   });
 
   const handleChange = (event) => {
-    console.log(event);
+    console.log(event.target.id);
   }
 
   return (
