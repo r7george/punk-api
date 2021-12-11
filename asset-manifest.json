@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/punk-api/static/css/main.b7c75de3.chunk.css",
+    "main.js": "/punk-api/static/js/main.6c6f46f7.chunk.js",
+    "main.js.map": "/punk-api/static/js/main.6c6f46f7.chunk.js.map",
+    "runtime-main.js": "/punk-api/static/js/runtime-main.afddbd33.js",
+    "runtime-main.js.map": "/punk-api/static/js/runtime-main.afddbd33.js.map",
+    "static/js/2.c1b6e271.chunk.js": "/punk-api/static/js/2.c1b6e271.chunk.js",
+    "static/js/2.c1b6e271.chunk.js.map": "/punk-api/static/js/2.c1b6e271.chunk.js.map",
+    "static/js/3.689a7ede.chunk.js": "/punk-api/static/js/3.689a7ede.chunk.js",
+    "static/js/3.689a7ede.chunk.js.map": "/punk-api/static/js/3.689a7ede.chunk.js.map",
+    "index.html": "/punk-api/index.html",
+    "static/css/main.b7c75de3.chunk.css.map": "/punk-api/static/css/main.b7c75de3.chunk.css.map",
+    "static/js/2.c1b6e271.chunk.js.LICENSE.txt": "/punk-api/static/js/2.c1b6e271.chunk.js.LICENSE.txt",
+    "static/media/image-asset.d3c6e5b4.png": "/punk-api/static/media/image-asset.d3c6e5b4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.afddbd33.js",
+    "static/js/2.c1b6e271.chunk.js",
+    "static/css/main.b7c75de3.chunk.css",
+    "static/js/main.6c6f46f7.chunk.js"
+  ]
+}
