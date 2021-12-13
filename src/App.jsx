@@ -15,7 +15,7 @@ const App = () => {
   const [isHighAcidity, setIsHighAcidity] = useState(false);
 
   useEffect(() => {
-    fetch(`https://api.punkapi.com/v2/beers`).then((response) => {
+    fetch(`https://api.punkapi.com/v2/beers?per_page=80`).then((response) => {
       return response.json();
     }).then((beerObject) => {
       setBeerArr(beerObject);

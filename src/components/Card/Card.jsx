@@ -7,8 +7,6 @@ const Card = ({imgUrl, name, abv, ibu, ebc, tagline, description, foodPairing}) 
   const handleClick = () => {
     setShowInfo(!showInfo)
   }
-  
-  
 
   const cardJSX = (
     <>
